@@ -48,7 +48,7 @@
       <td><?php echo htmlspecialchars($user["user_name"])?></td>
       <td><?php echo htmlspecialchars($user["password"])?></td>
       <td><?php echo htmlspecialchars($user["status"])?></td>
-      <td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+      <td><a type="button" class="btn btn-danger btn-sm" href="updateUser.php?id=<?php echo $user["id"] ?>">Delete</a></td>
     </tr>
     <?php } ?>
   </tbody>
